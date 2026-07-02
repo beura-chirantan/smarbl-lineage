@@ -11,7 +11,6 @@ Java or the ANTLR generator.
 ## Quick start
 
 ```bash
-cd submission
 bash setup.sh
 
 bash run.sh examples/nodes.json summary
