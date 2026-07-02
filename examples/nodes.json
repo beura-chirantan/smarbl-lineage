@@ -1,0 +1,13 @@
+[
+  {"id": "price-id", "name": "price", "expression": "0"},
+  {"id": "qty-id", "name": "qty", "expression": "0"},
+  {"id": "cost-id", "name": "cost", "expression": "0"},
+  {"id": "threshold-id", "name": "threshold", "expression": "0"},
+  {"id": "revenue-id", "name": "revenue", "expression": "price * qty"},
+  {"id": "margin-id", "name": "margin", "expression": "revenue - cost"},
+  {
+    "id": "report-id",
+    "name": "report",
+    "expression": "if (margin > threshold) then margin else 0"
+  }
+]

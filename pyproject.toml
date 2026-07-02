@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smarbl-lineage"
+version = "1.0.0"
+description = "ANTLR expression parser and in-memory financial lineage graph"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "antlr4-python3-runtime==4.13.2",
+]
+
+[project.scripts]
+lineage = "lineage.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
